@@ -1,4 +1,4 @@
-import style from './Calendar.module.css'
+import style from './MiniCalendar.module.css'
 import React, { useState } from 'react'
 
 interface CalendarProps {
@@ -6,7 +6,7 @@ interface CalendarProps {
   onChange?: (date: Date) => void
 }
 
-export const Calendar: React.FC<CalendarProps> = (props) => {
+export const MiniCalendar: React.FC<CalendarProps> = (props) => {
   const { value = new Date(), onChange } = props
 
   const [date, setDate] = useState(value)

@@ -1,12 +1,12 @@
-import { Calendar } from './components/Calender'
+import Calendar from './components/Calendar/Calendar'
+
 import './index.css'
+import dayjs from 'dayjs'
+
 function App() {
-  const onchange = (date: Date) => {
-    console.log(date)
-  }
   return (
     <div>
-      <Calendar onChange={onchange}></Calendar>
+      <Calendar locale='en-US' value={dayjs('2023-11-08')}></Calendar>
     </div>
   )
 }
